@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="OctaBytes mark">
+  <path fill="#12141C" fill-rule="evenodd" d="M132 32h248l100 100v248L380 480H132L32 380V132L132 32Zm52 94h144l58 58v144l-58 58H184l-58-58V184l58-58Z"/>
+  <rect x="218" y="218" width="76" height="76" rx="6" fill="#FF4D1C"/>
+</svg>

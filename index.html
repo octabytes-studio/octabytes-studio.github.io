@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OctaBytes — Independent app &amp; game studio</title>
+  <meta name="description" content="OctaBytes is an independent studio designing and building mobile games and apps — maker of Quizoo, Slingtide and KOMET.">
+  <link rel="canonical" href="https://octabytes-studio.github.io/">
+  <meta name="theme-color" content="#F7F5EF">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="OctaBytes">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="OctaBytes">
+  <meta property="og:title" content="OctaBytes — Small studio. Serious play.">
+  <meta property="og:description" content="An independent studio designing and building mobile games and apps. Meet Quizoo, Slingtide and KOMET.">
+  <meta property="og:url" content="https://octabytes-studio.github.io/">
+  <meta property="og:image" content="https://octabytes-studio.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OctaBytes — Small studio. Serious play.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OctaBytes — Small studio. Serious play.">
+  <meta name="twitter:description" content="An independent studio designing and building mobile games and apps. Meet Quizoo, Slingtide and KOMET.">
+  <meta name="twitter:image" content="https://octabytes-studio.github.io/assets/img/og.png">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/work/quizoo-home.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OctaBytes",
+    "url": "https://octabytes-studio.github.io/",
+    "email": "octabytes.studio@gmail.com",
+    "description": "Independent mobile app and game studio. Maker of Quizoo, Slingtide and KOMET.",
+    "sameAs": ["https://github.com/octabytes-studio"],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile game design and development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flutter app and game engineering" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product design, art direction and launch support" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="OctaBytes home">
+        <svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+          <path fill="currentColor" fill-rule="evenodd" d="M132 32h248l100 100v248L380 480H132L32 380V132L132 32Zm52 94h144l58 58v144l-58 58H184l-58-58V184l58-58Z"/>
+          <rect x="218" y="218" width="76" height="76" rx="6" fill="#FF4D1C"/>
+        </svg>
+        <span class="brand-word">OctaBytes</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
+        <a href="#craft">Craft</a>
+        <a href="#process">Process</a>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="availability"><span class="availability-dot"></span>Open for select work</span>
+        <a class="button button--small nav-cta" href="#contact">Start a project
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+      <a href="#work"><span>01</span>Work</a>
+      <a href="#studio"><span>02</span>Studio</a>
+      <a href="#craft"><span>03</span>Craft</a>
+      <a href="#process"><span>04</span>Process</a>
+      <a href="#contact"><span>05</span>Say hello</a>
+      <div class="mobile-nav-foot">
+        <a class="button" href="#contact">Start a project
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="mobile-email" href="mailto:octabytes.studio@gmail.com">octabytes.studio@gmail.com</a>
+      </div>
+    </nav>
+  </header>
+  <div class="nav-backdrop" hidden></div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-glow"></span>
+        <span class="hero-dots"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-load hero-load--1"><span class="eyebrow-mark"></span>Independent app &amp; game studio</p>
+          <h1 id="hero-title" class="hero-load hero-load--2">Small studio.<span class="h1-accent">Serious <span class="accent">play.</span></span></h1>
+          <p class="lede hero-load hero-load--3">OctaBytes designs and builds mobile games and apps with a player's instinct and a craftsman's patience — from the first sketch to the store release.</p>
+          <div class="hero-actions hero-load hero-load--4">
+            <a class="button" href="#work">Explore our work
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="button button--ghost" href="#contact">Start a project
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <dl class="hero-facts hero-load hero-load--5">
+            <div><dt>Platforms</dt><dd>iOS + Android</dd></div>
+            <div><dt>Stack</dt><dd>Flutter + Flame</dd></div>
+            <div><dt>Now</dt><dd class="fact-live"><span class="live-dot"></span>Quizoo live on Play</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art hero-load hero-load--art" role="group" aria-label="Screens from Quizoo, Slingtide and KOMET">
+          <svg class="hero-octa" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+            <path d="M56 14H144L186 56V144L144 186H56L14 144V56Z" fill="none" stroke="currentColor" stroke-width=".7"/>
+            <path d="M68 32H132L168 68V132L132 168H68L32 132V68Z" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.5 3"/>
+          </svg>
+          <span class="hero-orbit" aria-hidden="true"></span>
+
+          <figure class="device device--left">
+            <img src="/assets/work/slingtide-home.webp" width="644" height="1400" alt="">
+          </figure>
+          <figure class="device device--right">
+            <img src="/assets/work/komet-home.webp" width="644" height="1400" alt="">
+          </figure>
+          <figure class="device device--front">
+            <img src="/assets/work/quizoo-home.webp" width="644" height="1400" alt="Quizoo home screen showing the daily challenge, language picker and topic rails">
+          </figure>
+
+          <span class="art-note art-note--a" aria-hidden="true"><i></i>80,000+ questions</span>
+          <span class="art-vertical" aria-hidden="true">Play · test · ship</span>
+          <span class="art-chip" aria-hidden="true"><span class="live-dot"></span>Live on Google Play</span>
+        </div>
+      </div>
+
+      <div class="container hero-foot">
+        <span>Independent by choice</span>
+        <span>Built end to end</span>
+        <a href="#work">Scroll to explore
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>Game design <i class="ticker-sep"></i></span>
+          <span>Flutter engineering <i class="ticker-sep"></i></span>
+          <span>Art direction <i class="ticker-sep"></i></span>
+          <span>Sound &amp; feel <i class="ticker-sep"></i></span>
+          <span>UX &amp; interface <i class="ticker-sep"></i></span>
+          <span>Launch &amp; release <i class="ticker-sep"></i></span>
+          <span>Live ops <i class="ticker-sep"></i></span>
+          <span>Localisation <i class="ticker-sep"></i></span>
+        </div>
+        <div class="ticker-group">
+          <span>Game design <i class="ticker-sep"></i></span>
+          <span>Flutter engineering <i class="ticker-sep"></i></span>
+          <span>Art direction <i class="ticker-sep"></i></span>
+          <span>Sound &amp; feel <i class="ticker-sep"></i></span>
+          <span>UX &amp; interface <i class="ticker-sep"></i></span>
+          <span>Launch &amp; release <i class="ticker-sep"></i></span>
+          <span>Live ops <i class="ticker-sep"></i></span>
+          <span>Localisation <i class="ticker-sep"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="kicker">01 / Selected work</p>
+            <h2 id="work-title">Worlds worth<br><span class="serif">getting lost in.</span></h2>
+          </div>
+          <p class="section-intro">One flagship trivia game, one beach defence arcade, one cosmic climber. Different worlds — the same obsession with how they feel.</p>
+        </header>
+
+        <article class="project project--quizoo" aria-labelledby="quizoo-title" data-reveal>
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/icon-quizoo.webp" width="52" height="52" alt="" loading="lazy">
+            <div class="project-id">
+              <p class="project-name">Quizoo</p>
+              <p class="project-cat">Trivia · Live duels</p>
+            </div>
+            <a class="project-status project-status--live" href="https://play.google.com/store/apps/details?id=com.quizoo.play" target="_blank" rel="noopener">
+              <span class="status-dot"></span>Live on Google Play
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="project-body">
+            <div class="project-copy">
+              <h3 id="quizoo-title" class="project-title">Trivia that plays<br>like a game.</h3>
+              <p class="project-desc">A six-language quiz game with 80,000+ questions, 30-level topic ladders and live 1v1 duels. Quick rounds, real progression, and a reason to come back tomorrow.</p>
+
+              <ul class="stats" aria-label="Quizoo at a glance">
+                <li><b>80k+</b><span>Questions</span></li>
+                <li><b>06</b><span>Languages</span></li>
+                <li><b>30</b><span>Levels per topic</span></li>
+              </ul>
+
+              <ul class="tags" aria-label="Disciplines">
+                <li>Game design</li><li>Flutter</li><li>Live ops</li><li>Localisation</li>
+              </ul>
+
+              <div class="project-actions">
+                <a class="button button--play" href="https://play.google.com/store/apps/details?id=com.quizoo.play" target="_blank" rel="noopener">
+                  <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.3v13.4c0 .5.5.8.9.6l10.2-6.7a.7.7 0 0 0 0-1.2L8.9 4.7c-.4-.2-.9.1-.9.6Z" fill="currentColor"/></svg>
+                  Get it on Google Play
+                </a>
+                <a class="text-link" href="https://octabytes-studio.github.io/quizoo/" target="_blank" rel="noopener">Visit the game site
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <button class="button button--ghost gallery-trigger" type="button" data-gallery="quizoo">View screens</button>
+              </div>
+            </div>
+
+            <div class="project-art project-art--quizoo">
+              <svg class="art-octa" viewBox="0 0 200 200" aria-hidden="true"><path d="M56 14H144L186 56V144L144 186H56L14 144V56Z" fill="none" stroke="currentColor" stroke-width=".8"/></svg>
+              <span class="art-block art-block--a" aria-hidden="true"></span>
+              <span class="art-block art-block--b" aria-hidden="true"></span>
+              <figure class="device device--back">
+                <img src="/assets/work/quizoo-play.webp" width="644" height="1400" alt="" loading="lazy">
+              </figure>
+              <figure class="device device--front">
+                <img src="/assets/work/quizoo-home.webp" width="644" height="1400" alt="Quizoo home screen showing daily challenge and topic rails" loading="lazy">
+              </figure>
+            </div>
+          </div>
+
+          <template data-gallery="quizoo">
+            <span data-src="/assets/work/quizoo-home.webp" data-caption="Home — daily challenge, six languages and topic rails" data-alt="Quizoo home screen"></span>
+            <span data-src="/assets/work/quizoo-play.webp" data-caption="Play — a timed trivia round with four answer options" data-alt="Quizoo trivia question screen"></span>
+            <span data-src="/assets/work/quizoo-ranks.webp" data-caption="Ranks — weekly and all-time leaderboards" data-alt="Quizoo leaderboard screen"></span>
+          </template>
+        </article>
+
+        <div class="project-grid">
+          <article class="project project--compact project--slingtide" aria-labelledby="slingtide-title" data-reveal>
+            <div class="project-top">
+              <img class="project-icon" src="/assets/img/icon-slingtide.webp" width="52" height="52" alt="" loading="lazy">
+              <div class="project-id">
+                <p class="project-name">Slingtide</p>
+                <p class="project-cat">Slingshot defence · Offline</p>
+              </div>
+              <span class="project-status project-status--dev"><span class="status-dot"></span>In development</span>
+            </div>
+
+            <div class="project-art project-art--slingtide">
+              <span class="sling-sun" aria-hidden="true"></span>
+              <svg class="sling-wave" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0 62c50-22 100-22 150 0s100 22 150 0 100-22 150 0 100 22 150 0" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M0 82c50-22 100-22 150 0s100 22 150 0 100-22 150 0 100 22 150 0" fill="none" stroke="currentColor" stroke-width=".7" opacity=".5"/>
+              </svg>
+              <figure class="device device--back">
+                <img src="/assets/work/slingtide-play.webp" width="644" height="1400" alt="" loading="lazy">
+              </figure>
+              <figure class="device device--front">
+                <img src="/assets/work/slingtide-home.webp" width="644" height="1400" alt="Slingtide home screen showing the Glow Bay shore" loading="lazy">
+              </figure>
+            </div>
+
+            <div class="project-body">
+              <div class="project-copy">
+                <h3 id="slingtide-title" class="project-title">Hold the tide.<br>Save the nest.</h3>
+                <p class="project-desc">A one-thumb slingshot game about a sea turtle with a nest to protect. Fifty levels, five shores and five bosses — built to play fully offline.</p>
+                <ul class="stats" aria-label="Slingtide at a glance">
+                  <li><b>50</b><span>Levels</span></li>
+                  <li><b>05</b><span>Bosses</span></li>
+                  <li><b>13</b><span>Upgrades</span></li>
+                </ul>
+                <ul class="tags" aria-label="Disciplines">
+                  <li>Game design</li><li>Flutter + Flame</li><li>Accessibility</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="text-link" href="https://octabytes-studio.github.io/slingtide/" target="_blank" rel="noopener">Preview the game
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <button class="button button--ghost gallery-trigger" type="button" data-gallery="slingtide">View screens</button>
+                </div>
+              </div>
+            </div>
+
+            <template data-gallery="slingtide">
+              <span data-src="/assets/work/slingtide-home.webp" data-caption="Home — five shores, one nest to defend" data-alt="Slingtide home screen"></span>
+              <span data-src="/assets/work/slingtide-play.webp" data-caption="Play — pull, aim and pop the beach critters" data-alt="Slingtide gameplay screen"></span>
+              <span data-src="/assets/work/slingtide-workshop.webp" data-caption="Workshop — thirteen upgrades across the run" data-alt="Slingtide workshop screen"></span>
+            </template>
+          </article>
+
+          <article class="project project--compact project--komet" aria-labelledby="komet-title" data-reveal>
+            <div class="project-top">
+              <img class="project-icon" src="/assets/img/icon-komet.webp" width="52" height="52" alt="" loading="lazy">
+              <div class="project-id">
+                <p class="project-name">KOMET</p>
+                <p class="project-cat">Orbit arcade · One-handed</p>
+              </div>
+              <span class="project-status project-status--dev"><span class="status-dot"></span>In development</span>
+            </div>
+
+            <div class="project-art project-art--komet">
+              <span class="komet-orbit komet-orbit--1" aria-hidden="true"></span>
+              <span class="komet-orbit komet-orbit--2" aria-hidden="true"></span>
+              <span class="komet-orbit komet-orbit--3" aria-hidden="true"></span>
+              <span class="komet-star" aria-hidden="true"></span>
+              <figure class="device device--back">
+                <img src="/assets/work/komet-play.webp" width="644" height="1400" alt="" loading="lazy">
+              </figure>
+              <figure class="device device--front">
+                <img src="/assets/work/komet-home.webp" width="644" height="1400" alt="KOMET home screen showing four orbit rings" loading="lazy">
+              </figure>
+            </div>
+
+            <div class="project-body">
+              <div class="project-copy">
+                <h3 id="komet-title" class="project-title">Two taps.<br>Four orbits.</h3>
+                <p class="project-desc">A one-handed arcade game about staying alive around a dying star. Hop between four orbits, collect stardust and climb a level ladder that keeps going.</p>
+                <ul class="stats" aria-label="KOMET at a glance">
+                  <li><b>04</b><span>Orbits</span></li>
+                  <li><b>06</b><span>Powers</span></li>
+                  <li><b>50</b><span>Badges</span></li>
+                </ul>
+                <ul class="tags" aria-label="Disciplines">
+                  <li>Game design</li><li>Flutter + Flame</li><li>Leaderboards</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="text-link" href="https://octabytes-studio.github.io/komet/" target="_blank" rel="noopener">Preview the game
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M6 4.5h5.5V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <button class="button button--ghost gallery-trigger" type="button" data-gallery="komet">View screens</button>
+                </div>
+              </div>
+            </div>
+
+            <template data-gallery="komet">
+              <span data-src="/assets/work/komet-home.webp" data-caption="Home — pick your orbit and chase the next level" data-alt="KOMET home screen"></span>
+              <span data-src="/assets/work/komet-play.webp" data-caption="Play — hop orbits, dodge asteroids, collect stardust" data-alt="KOMET gameplay screen"></span>
+              <span data-src="/assets/work/komet-leaderboard.webp" data-caption="Leaderboard — levels are your rank" data-alt="KOMET leaderboard screen"></span>
+            </template>
+          </article>
+        </div>
+
+        <a class="next-project" href="#contact" data-reveal>
+          <span class="next-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M20.5 8h23L56 20.5v23L43.5 56h-23L8 43.5v-23L20.5 8Z" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="27.4" y="27.4" width="9.2" height="9.2" rx="1" fill="#FF4D1C"/></svg>
+          </span>
+          <span class="next-copy">
+            <span class="kicker">Your project</span>
+            <span class="next-title">The next world could be yours.</span>
+          </span>
+          <span class="next-arrow" aria-hidden="true">
+            <svg viewBox="0 0 32 32"><path d="M8 24 24 8M11 8h13v13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section studio" id="studio" aria-labelledby="studio-title">
+      <div class="container studio-grid">
+        <div class="studio-sticky" data-reveal>
+          <p class="kicker">02 / The studio</p>
+          <h2 id="studio-title">Small by design.<br><span class="serif">Not by accident.</span></h2>
+          <svg class="studio-mark" viewBox="0 0 512 512" aria-hidden="true">
+            <path fill="currentColor" fill-rule="evenodd" d="M132 32h248l100 100v248L380 480H132L32 380V132L132 32Zm52 94h144l58 58v144l-58 58H184l-58-58V184l58-58Z"/>
+            <rect x="218" y="218" width="76" height="76" rx="6" fill="#FF4D1C"/>
+          </svg>
+          <p class="studio-note">Make it feel good.<br>Then make it feel finished.</p>
+        </div>
+
+        <div class="studio-content" data-reveal>
+          <p class="studio-lede">OctaBytes is an independent studio making mobile games and apps. We shape the idea, design the loop, draw the world, write the code and sweat the release — in-house.</p>
+          <p>Fewer hand-offs, shorter feedback loops, and the people who make the thing are the people you talk to. We're not trying to ship fifty apps. We'd rather make a handful of things that earn a place on your home screen — and keep it.</p>
+
+          <div class="principles">
+            <div class="principle">
+              <span class="principle-num">01</span>
+              <div><h3>Feel is a feature.</h3><p>Input latency, haptics, the sound a button makes. The details players feel before they can name them.</p></div>
+            </div>
+            <div class="principle">
+              <span class="principle-num">02</span>
+              <div><h3>Ship the whole thing.</h3><p>A game isn't finished at the last level. Store art, privacy, accessibility and the first update are part of the craft.</p></div>
+            </div>
+            <div class="principle">
+              <span class="principle-num">03</span>
+              <div><h3>Small on purpose.</h3><p>A tight team from sketch to ship. No hand-off maze, no layers between you and the people making it.</p></div>
+            </div>
+          </div>
+
+          <dl class="studio-stats">
+            <div><dt>03</dt><dd>Titles designed &amp; built in-house</dd></div>
+            <div><dt>02</dt><dd>Platforms, one codebase</dd></div>
+            <div><dt>01</dt><dd>Team from sketch to ship</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section craft" id="craft" aria-labelledby="craft-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="kicker">03 / What we do</p>
+            <h2 id="craft-title">Eight sides.<br><span class="serif">One studio.</span></h2>
+          </div>
+          <p class="section-intro">Bring us the whole journey or the piece you're missing. Either way, the work is hands-on.</p>
+        </header>
+
+        <div class="craft-grid">
+          <div class="octa-wrap" data-reveal>
+            <div class="octa" id="octa">
+              <svg class="octa-svg" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <path class="octa-base" d="M56 14H144L186 56V144L144 186H56L14 144V56Z"/>
+                <path class="octa-inner" d="M68 32H132L168 68V132L132 168H68L32 132V68Z"/>
+                <g class="octa-sides">
+                  <line data-side="0" x1="60" y1="14" x2="140" y2="14"/>
+                  <line data-side="1" x1="146.8" y1="16.8" x2="183.2" y2="53.2"/>
+                  <line data-side="2" x1="186" y1="60" x2="186" y2="140"/>
+                  <line data-side="3" x1="183.2" y1="146.8" x2="146.8" y2="183.2"/>
+                  <line data-side="4" x1="140" y1="186" x2="60" y2="186"/>
+                  <line data-side="5" x1="53.2" y1="183.2" x2="16.8" y2="146.8"/>
+                  <line data-side="6" x1="14" y1="140" x2="14" y2="60"/>
+                  <line data-side="7" x1="16.8" y1="53.2" x2="53.2" y2="16.8"/>
+                </g>
+                <g class="octa-nodes">
+                  <circle cx="56" cy="14" r="2.2"/><circle cx="144" cy="14" r="2.2"/>
+                  <circle cx="186" cy="56" r="2.2"/><circle cx="186" cy="144" r="2.2"/>
+                  <circle cx="144" cy="186" r="2.2"/><circle cx="56" cy="186" r="2.2"/>
+                  <circle cx="14" cy="144" r="2.2"/><circle cx="14" cy="56" r="2.2"/>
+                </g>
+              </svg>
+              <div class="octa-center">
+                <span class="octa-num" id="octa-num">08</span>
+                <span class="octa-label" id="octa-label">Sides of one studio</span>
+              </div>
+            </div>
+            <p class="octa-hint"><span class="octa-hint-mark"></span>Hover a capability. Or just read the list.</p>
+          </div>
+
+          <ol class="capabilities" data-reveal>
+            <li class="capability" data-cap="0">
+              <span class="cap-num">01</span>
+              <div class="cap-body"><h3>Product strategy</h3><p>Audience, loop, scope and the smallest version worth shipping.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="1">
+              <span class="cap-num">02</span>
+              <div class="cap-body"><h3>Game design</h3><p>Systems, progression and difficulty that keep the “one more go” alive.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="2">
+              <span class="cap-num">03</span>
+              <div class="cap-body"><h3>UX &amp; interface</h3><p>Flows and screens that stay out of the way — on a phone, with one thumb.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="3">
+              <span class="cap-num">04</span>
+              <div class="cap-body"><h3>Flutter engineering</h3><p>One codebase for iOS and Android, built to feel native on both.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="4">
+              <span class="cap-num">05</span>
+              <div class="cap-body"><h3>Art direction</h3><p>Characters, UI and worlds with a point of view — not a template.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="5">
+              <span class="cap-num">06</span>
+              <div class="cap-body"><h3>Sound &amp; haptics</h3><p>The half-second of feedback that turns an action into a feeling.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="6">
+              <span class="cap-num">07</span>
+              <div class="cap-body"><h3>QA &amp; release</h3><p>Device testing, store assets, privacy, age ratings and the launch checklist.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="capability" data-cap="7">
+              <span class="cap-num">08</span>
+              <div class="cap-body"><h3>Live ops &amp; growth</h3><p>Updates, events, pricing and the unglamorous work that keeps a game alive.</p></div>
+              <span class="cap-arrow" aria-hidden="true">↗</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="kicker">04 / How we work</p>
+            <h2 id="process-title">From spark to<br><span class="serif">store page.</span></h2>
+          </div>
+          <p class="section-intro">A simple shape for a complicated thing. You'll always know where we are and what's next.</p>
+        </header>
+
+        <ol class="steps" data-reveal>
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>Shape</h3>
+            <p>Start with the feeling and the loop, not a sixty-page brief. We find the smallest version worth making.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>Prototype</h3>
+            <p>Get it into hands quickly. Test the fun before we polish the paint.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>Build</h3>
+            <p>Design, code, art, sound and all the unglamorous systems that hold a game together.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3>Ship</h3>
+            <p>Store art, privacy, pricing and release — then the first updates that make it last.</p>
+          </li>
+        </ol>
+
+        <p class="process-note" data-reveal>
+          <span>One team. One thread.</span>
+          <span>No hand-off maze.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-main" data-reveal>
+          <p class="kicker">05 / Say hello</p>
+          <h2 id="contact-title">Got a world<br><span class="serif">worth building?</span></h2>
+          <p class="contact-lede">Tell us what you're making, where you're stuck, or what you wish existed. We read every email ourselves.</p>
+
+          <div class="email-row">
+            <a class="email" href="mailto:octabytes.studio@gmail.com">octabytes.studio@gmail.com</a>
+            <button class="copy-btn" type="button" data-copy="octabytes.studio@gmail.com" aria-label="Copy email address">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M10.5 3.5v-.5a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1H4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+              Copy
+            </button>
+          </div>
+
+          <p class="availability contact-availability"><span class="availability-dot"></span>Available for select projects</p>
+        </div>
+
+        <div class="contact-side" data-reveal>
+          <div class="contact-group">
+            <span class="side-label">Elsewhere</span>
+            <a href="https://github.com/octabytes-studio" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-group">
+            <span class="side-label">The games</span>
+            <a href="https://octabytes-studio.github.io/quizoo/" target="_blank" rel="noopener">Quizoo <span aria-hidden="true">↗</span></a>
+            <a href="https://octabytes-studio.github.io/slingtide/" target="_blank" rel="noopener">Slingtide <span aria-hidden="true">↗</span></a>
+            <a href="https://octabytes-studio.github.io/komet/" target="_blank" rel="noopener">KOMET <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-octa" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><path d="M56 14H144L186 56V144L144 186H56L14 144V56Z" fill="none" stroke="currentColor" stroke-width=".6"/><path d="M68 32H132L168 68V132L132 168H68L32 132V68Z" fill="none" stroke="currentColor" stroke-width=".35" stroke-dasharray="1.5 4"/></svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="OctaBytes home">
+            <svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+              <path fill="currentColor" fill-rule="evenodd" d="M132 32h248l100 100v248L380 480H132L32 380V132L132 32Zm52 94h144l58 58v144l-58 58H184l-58-58V184l58-58Z"/>
+              <rect x="218" y="218" width="76" height="76" rx="6" fill="#FF4D1C"/>
+            </svg>
+            <span class="brand-word">OctaBytes</span>
+          </a>
+          <p>Independent mobile app &amp; game studio.<br>Made between pixels and play.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Work links">
+          <h2>Work</h2>
+          <a href="#work">Selected work</a>
+          <a href="https://octabytes-studio.github.io/quizoo/" target="_blank" rel="noopener">Quizoo</a>
+          <a href="https://octabytes-studio.github.io/slingtide/" target="_blank" rel="noopener">Slingtide</a>
+          <a href="https://octabytes-studio.github.io/komet/" target="_blank" rel="noopener">KOMET</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Studio links">
+          <h2>Studio</h2>
+          <a href="#studio">About</a>
+          <a href="#craft">What we do</a>
+          <a href="#process">How we work</a>
+          <a href="#contact">Start a project</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Elsewhere links">
+          <h2>Elsewhere</h2>
+          <a href="mailto:octabytes.studio@gmail.com">Email</a>
+          <a href="https://github.com/octabytes-studio" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://play.google.com/store/apps/details?id=com.quizoo.play" target="_blank" rel="noopener">Google Play</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> OctaBytes. All rights reserved.</p>
+        <p class="footer-note">No cookies. No analytics. Just pixels.</p>
+        <nav class="footer-legal" aria-label="Game policies">
+          <a href="https://octabytes-studio.github.io/quizoo/privacy.html" target="_blank" rel="noopener">Quizoo privacy</a>
+          <a href="https://octabytes-studio.github.io/slingtide/privacy.html" target="_blank" rel="noopener">Slingtide privacy</a>
+          <a href="https://octabytes-studio.github.io/komet/privacy.html" target="_blank" rel="noopener">KOMET privacy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" type="button" aria-label="Close gallery">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous screen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lightbox-stage">
+        <img class="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="644" height="1400">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+        <p class="lightbox-count"></p>
+      </div>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next screen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
